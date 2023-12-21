@@ -336,7 +336,7 @@ svg{
   padding: .5rem;
   color: var(--title-color);
   font-size: 1.5rem;
-  clip-path: circle(50%);
+  border-radius: 50%;
   transition: transform .4s;
 }
 .home--social-link:hover{
