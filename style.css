@@ -106,7 +106,7 @@ a {
 img,
 svg{
   max-width: 100%;
- 
+  height: 100%;
 }
     
 /*--Resable css clasess--*/
@@ -143,7 +143,24 @@ svg{
   overflow: hidden;
 }
 
+.main .image {
+  width: 250px;
+  margin-left: 20px;
+}
+.main .image img {
+  border-radius: 30%;
+  opacity: 0;
+  animation: fade-in 1s ease-in-out forwards;
+}
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /*--HEADER AND NAV*/
 
 .element-header {
@@ -225,30 +242,14 @@ svg{
 .show-menu {
   right: 0;
 }
-/*Add blur to header */
-.blur-header {
-  background-color: transparent;
-}
-.blur-header::after{
-  content: '';
-  position: absolute;
-  width: 1000%;
-  height: 100%;
-  background-color: hsl(0, 0% ,15%, .2);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px) /*for safari*/;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-/*active link*/
-.active-link {
-  color: var(--first-color)
-}
+
+
+
+
 
 /*HOME*/
 .home{
-  background-color: var(--container-color);
+  background-color: var(--body-color);
 }
 .home--container{
   padding-top: 2rem;
@@ -662,7 +663,7 @@ svg{
   .services--container,
   .projects--container,
   .contact--container {
-    grid-template-columns: 360px;
+    grid-template-columns: 256px;
     justify-content: center;
   }
   .footer--education{
@@ -682,15 +683,7 @@ svg{
     grid-template-columns: repeat(2,1fr);
     align-items: center;
   }
-  .home--data,
-  .about--data,
-  .skills--data
-  :is(.about--data,.skills--data):is(.section--subtitle,.section--title){
-    text-align: initial;
-  }
-  .home--social{
-    justify-content: initial;
-  }
+
   .home--blob
   .about--blob{
     width: 400px;
@@ -738,11 +731,6 @@ svg{
 @media screen and (min-width:1152px) {
   .container {
     margin-inline:auto;
-  }
-  .home--container {
-    grid-template-columns: 455px 550px ;
-    column-gap: 3rem;
-    padding-block: 2rem 3rem ;
   }
   
   .home--blob{
