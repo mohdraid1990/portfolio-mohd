@@ -143,10 +143,7 @@ svg{
   overflow: hidden;
 }
 
-.main .image {
-  width: 250px;
-  margin-left: 20px;
-}
+
 .main .image img {
   border-radius: 30%;
   opacity: 0;
