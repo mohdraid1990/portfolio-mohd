@@ -106,7 +106,7 @@ a {
 img,
 svg{
   max-width: 100%;
-
+  
 }
     
 /*--Resable css clasess--*/
@@ -146,8 +146,8 @@ svg{
 
 .main .image img {
   border-radius: 30%;
-  border: 5px solid rgb(129, 154, 80) ;
   opacity: 0;
+  border: 5px solid rgb(129, 154, 80) ;
   animation: fade-in 1s ease-in-out forwards;
 }
 
