@@ -146,6 +146,7 @@ svg{
 
 .main .image img {
   border-radius: 30%;
+  border: 5px solid rgb(129, 154, 80) ;
   opacity: 0;
   animation: fade-in 1s ease-in-out forwards;
 }
