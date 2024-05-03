@@ -420,7 +420,7 @@ svg{
 }
 .skills--group{
   row-gap: 1rem;
-  list-style: decimal;
+
 }
 .skills--item{
   font-weight: var(--font-medium);
