@@ -425,9 +425,7 @@ svg{
 .skills--item{
   font-weight: var(--font-medium);
   color: var(--title-color);
-}
-.skills--item::marker{
-  color: var(--first-color);
+  list-style: none;
 }
 
 /*services*/
