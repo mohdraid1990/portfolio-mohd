@@ -515,7 +515,12 @@ svg{
 }
 .pro-vue{
         text-align: center;
+        margin: 20px;
 }
+.pro-vue h1 {
+    font-size:25px;
+}
+
 
 
 
