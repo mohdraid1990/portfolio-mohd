@@ -472,7 +472,8 @@ svg{
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
-  cursor: pointer;
+  cursor: pointer;   
+    max-width: 350px;
 }
 .projects--cards  a {
  
@@ -513,14 +514,15 @@ svg{
 .projects--cards:hover .project--modal {
   bottom: 0;
 }
-.pro-vue{
-        text-align: center;
-        margin: 20px;
-}
-.pro-vue h1 {
-    font-size:25px;
-}
 
+.pro-vue{
+
+        margin: 20px;
+        display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
