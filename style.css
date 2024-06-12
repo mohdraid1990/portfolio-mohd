@@ -414,7 +414,7 @@ svg{
 }
 .skills--content{
   grid-template-columns: repeat(2, max-content);
-  column-gap: 0rem;
+  column-gap: 4rem;
   justify-content: center;
   align-items: baseline;
 }
@@ -641,7 +641,7 @@ svg{
 
 /*BREAKPOINTS*/
 /*for small devices*/
-@media screen and (max-width:320px){
+@media screen and (max-width:375px){
   .container{
     margin-inline: 1rem;
   }
