@@ -414,7 +414,7 @@ svg{
 }
 .skills--content{
   grid-template-columns: repeat(2, max-content);
-  column-gap: 4rem;
+  column-gap: 3rem;
   justify-content: center;
   align-items: baseline;
 }
